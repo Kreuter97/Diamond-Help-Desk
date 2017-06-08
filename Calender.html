@@ -7,67 +7,146 @@
   
 <!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
     <link rel="stylesheet" href="Calender.css" type="text/css" />
+    
+     <meta charset="utf-8">
+
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+
+  <style>
+    body {
+      line-height: 1;
+      margin: 50px;
+    }
+    div {
+      background: rgba(0, 0, 0, .1);
+      border-radius: 5px;
+      box-sizing: border-box;
+      padding: 15px;
+      width: 220px;
+    }
+    header {
+      overflow: clear;
+      position: relative;
+    }
+    h2 {
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 0 10px;
+      text-align: center;
+    }
+    button {
+      position: absolute;
+      top: -4px;
+    }
+    button:first-child {
+      left: 0;
+    }
+    button:last-child {
+      right: 0;
+    }
+    table {
+      background: #fff;
+      border-collapse: collapse;
+      color: #222;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 13px;
+      width: 100%;
+    }
+    td {
+      border: 1px solid #ccc;
+      color: #444;
+      line-height: 22px;
+      text-align: center;
+    }
+    tr:first-child td {
+      color: #222;
+      font-weight: 700;
+    }
+    .selected {
+      background: #f0951d;
+      border: 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .5) inset;
+    }
+  </style>
+    
   </head>
   <body>
     <div id="page">
     <div id="logo">
       <h1><a id="logoLink">Diamond Packaging Help Desk</a></h1>
     </div>
-    <div class="month"> 
-  <ul>
-    <li class="prev">&#10094;</li>
-    <li class="next">&#10095;</li>
-    <li>
-      August<br>
-      <span style="font-size:18px">2016</span>
-    </li>
-  </ul>
+    </div>
+<body>
+
+<div>
+  <header>
+    <button>«</button>
+    <h2>July 2013</h2>
+    <button>»</button>
+  </header>
+<table>
+  <tr>
+    <td>S</td>
+    <td>M</td>
+    <td>T</td>
+    <td>W</td>
+    <td>Th</td>
+    <td>F</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>14</td>
+    <td>15</td>
+    <td>16</td>
+    <td class="selected">17</td>
+    <td>18</td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>21</td>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>28</td>
+    <td>29</td>
+    <td>30</td>
+    <td>31</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 </div>
 
-<ul class="weekdays">
-  <li>Mo</li>
-  <li>Tu</li>
-  <li>We</li>
-  <li>Th</li>
-  <li>Fr</li>
-  <li>Sa</li>
-  <li>Su</li>
-</ul>
 
-<ul class="days"> 
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-  <li><span class="active">10</span></li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>15</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>22</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
-</ul>
-      
-    </div>
+</body>
+</html>
   </body>
 </html>
