@@ -18,21 +18,25 @@
     </div>
   </body>
   
-    <form name="Help">
-        Name: <input type="text" name="txtname">
-        Email: <input type="text" name="txtemail">
-      
-      <br>Hardware: <input type="checkbox" name="ckckeck">
-      <br>Software: <input type="checkbox" name="ckckeck">
-      <br>Network Connectivity: <input type="checkbox" name="ckckeck">
-      <br>Printing: <input type="checkbox" name="ckckeck">
-      <br>Other: <input type="checkbox" name="ckckeck">
-      <input type="text" name="txtbox">
-      <form action="MAILTO:ckreuter@diamondpackaging.com" method="GET" enctype="text/plain">
-      <input type="submit" value="Send">
-      <input type="reset" value="Reset">
-      </form>
-  </form>
+<body>
+
+    <?=$thankYou ?>
+
+    <form method="post" action="contact.php">
+        <label>Name:</label>
+        <input name="sender">
+
+        <label>Email address:</label>
+        <input name="senderEmail">
+
+        <label>Message:</label>
+        <textarea rows="5" cols="20" name="message"></textarea>
+
+        <input type="submit" name="submit">
+    </form>
+
+</body>
+</html>
      
  
 
