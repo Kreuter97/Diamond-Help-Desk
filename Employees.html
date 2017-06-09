@@ -1,81 +1,73 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Diamond Packaging Help Desk</title>
-    <meta name="author" content="CJ Kreuter" />
-    <meta name="description" content="Help Desk" />
-  
-<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
-    <link rel="stylesheet" href="style.css" type="text/css" />
-  </head>
-  <body>
-    <div id="page">
-    <div id="logo">
-      <h1><a id="logoLink">Diamond Packaging Help Desk</a></h1>
-    </div>
-    <form class="form-horizontal" role="form" id="ftk-contact">
-<h4>Get in touch with us now</h4>
-<div class="form-group">
-<label for="inputType" class="col-lg-2 control-label">Type of Inquiry</label>
-<div class="col-lg-10">
-<select class="form-control" id="inputType">
-<option>Request a Quotation</option>
-<option>Request a Bluebook</option>
-<option>General Inquiry</option>
-</select>
-</div>
-</div>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+  <title>Contact Form Example</title>
+</head>
 
-<div class="form-group">
-<label for="inputName" class="col-lg-2 control-label">Name *</label>
-<div class="col-lg-10">
-<input type="text" class="form-control" id="inputName" placeholder="Your Name">
-</div>
-</div>
+<body>
+  <h2 class="content-head is-center">Contact Us!</h2>
+  <aside>
+       <p>
+           We would <em>love</em> to hear from you! </p>
+           <p>Please use the <b><em>Contact Form</em></b>
+           to send us a message.
+       </p>
+   </aside>
 
-<div class="form-group">
-<label for="inputEmail" class="col-lg-2 control-label">Email *</label>
-<div class="col-lg-10">
-<input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
-</div>
-</div>
+<!-- START HERE -->
+   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
 
-<div class="form-group">
-<label for="inputCompany" class="col-lg-2 control-label">Company</label>
-<div class="col-lg-10">
-<input type="text" class="form-control" id="inputCompany" placeholder="Your Company Name">
-</div>
-</div>
+  <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbwMxYDrufp73bKdU8gMvxFDdHRuzcR4IKQUB33B7GqwyfyZS04/exec">
+    <!-- change the form action to your script url -->
 
-<div class="form-group">
-<label for="message" class="col-lg-2 control-label">Message *</label>
-<div class="col-lg-10">
-<textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
-</div>
-</div>
+    <fieldset class="pure-group">
+      <label for="name">Name: </label>
+      <input id="name" name="name" placeholder="What your Mom calls you" />
+    </fieldset>
 
-<div class="form-group">
-<label for="inputPhone" class="col-lg-2 control-label">Phone</label>
-<div class="col-lg-10">
-<input type="tel" class="form-control" id="inputPhone" placeholder="Your Phone Number">
-</div>
-</div>
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="10"
+      placeholder="Tell us what's on your mind..."></textarea>
+    </fieldset>
 
-<div class="form-group">
-<label for="inputWeb" class="col-lg-2 control-label">URL</label>
-<div class="col-lg-10">
-<input type="url" class="form-control" id="inputWeb" placeholder="Your Website URL">
-</div>
-</div>
+    <fieldset class="pure-group">
+      <label for="email"><em>Your</em> Email Address:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="your.name@email.com"/>
+      <span id="email-invalid" style="visibility:hidden">
+        Must be a valid email address</span>
+    </fieldset>
 
-<div class="form-group">
-<div class="col-lg-offset-2 col-lg-10">
-<button type="submit" class="btn btn-primary btn-lg">Send your Inquiry now</button>
-</div>
-</div>
-</form>
-      
-    </div>
-  </body>
+    <fieldset class="pure-group">
+      <label for="color">Favourite Color: </label>
+      <input id="color" name="color" placeholder="green" />
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+
+</body>
 </html>
-
