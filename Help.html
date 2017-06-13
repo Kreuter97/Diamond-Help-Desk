@@ -80,6 +80,11 @@
       <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 
   </form>
+    <script>
+function myFunction() {
+    document.getElementById("myForm").reset();
+}
+</script>
 
   <!-- Customise the Thankyou Message People See when they submit the form: -->
   <div style="display:none;" id="thankyou_message">
@@ -87,7 +92,7 @@
       We will get back to you soon!</h2>
   </div>
    <button class="button-secondary pure-button button-xlarge">
-    <i class="fa fa-refresh" value="Reset"></i>&nbsp;reset</button>
+    <i class="fa fa-refresh" onclick="myFunction()"></i>&nbsp;reset</button>
    <button class="button-secondary pure-button button-xlarge">
     <i class="fa fa-home" onclick="window.location.href='http://kreuter97.github.io/Diamond-Help-Desk'"></i>&nbsp;home</button>
 
