@@ -80,11 +80,7 @@
       <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 
   </form>
-    <script>
-function myFunction() {
-    document.getElementById("myForm").reset();
-}
-</script>
+ 
 
   <!-- Customise the Thankyou Message People See when they submit the form: -->
   <div style="display:none;" id="thankyou_message">
@@ -95,7 +91,12 @@ function myFunction() {
     <i class="fa fa-refresh" onclick="myFunction()"></i>&nbsp;reset</button>
    <button class="button-secondary pure-button button-xlarge">
     <i class="fa fa-home" onclick="window.location.href='http://kreuter97.github.io/Diamond-Help-Desk'"></i>&nbsp;home</button>
-
+    
+   <script>
+function myFunction() {
+    document.getElementById("myForm").reset();
+}
+</script>
 
   <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" type="text/javascript"
