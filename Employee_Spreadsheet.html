@@ -24,23 +24,7 @@
   <form id="gform" method="POST" class="pure-form pure-form-stacked"
   action="https://script.google.com/macros/s/AKfycby9rjGl1yAGvUgQW4Xx62ScALAptfzaG-WcNYyxzUH4hgMAzzpA/exec">
     <!-- change the form action to your script url -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-<script type='text/javascript'>    
-  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1sbyMINQHPsJctjAtMW0lCfLrcpMqoGMOJj6AN-sNQrc/pubhtml';
-
-  function init() {
-    Tabletop.init( { key: publicSpreadsheetUrl,
-                     callback: showInfo,
-                     simpleSheet: true } )
-  }
-
-  function showInfo(data, tabletop) {
-    alert('Successfully processed!')
-    console.log(data);
-  }
-
-  window.addEventListener('DOMContentLoaded', init)
-</script>
+<iframe src="https://docs.google.com/spreadsheets/d/1utkb4sw2hj5frnGEaOpS1LuK_5xNxNf3pOy9eHAxREg/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
    
     <button class="button-secondary pure-button button-xlarge">
     <i class="fa fa-refresh" onclick="window.location.href='http://kreuter97.github.io/Diamond-Help-Desk/Employees.html'"></i>&nbsp;reset</button>
