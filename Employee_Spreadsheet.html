@@ -1,1 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+  <title>Contact Form Example</title>
+</head>
+
+<body>
+  <h2 class="content-head is-center">Diamond New Employee Form</h2>
+  <aside>
+       <p>
+          New Employee Information 
+       </p>
+   </aside>
+
+<!-- START HERE -->
+   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
+
+  <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycby9rjGl1yAGvUgQW4Xx62ScALAptfzaG-WcNYyxzUH4hgMAzzpA/exec">
+    <!-- change the form action to your script url -->
 <iframe src="https://docs.google.com/spreadsheets/d/1utkb4sw2hj5frnGEaOpS1LuK_5xNxNf3pOy9eHAxREg/pubhtml?widget=true&amp;headers=false"></iframe>
+   
+    <button class="button-secondary pure-button button-xlarge">
+    <i class="fa fa-refresh" onclick="window.location.href='http://kreuter97.github.io/Diamond-Help-Desk/Employees.html'"></i>&nbsp;reset</button>
+   <button class="button-secondary pure-button button-xlarge">
+    <i class="fa fa-home" onclick="window.location.href='http://kreuter97.github.io/Diamond-Help-Desk'"></i>&nbsp;home</button>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://kreuter97.github.io/Diamond-Help-Desk/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+<script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+</body>
+</html>
+
+
