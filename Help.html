@@ -69,28 +69,31 @@
     </fieldset>
       
     <fieldset class="pure-group">
-      <label for="Hardware">Hardware: </label>
-      <input type="checkbox" name="ckckeck"  />
-      <input id="name" name="name" placeholder="Example" />
-        <br>
-      <label for="Software">Software: </label>
-      <input type="checkbox" name="ckckeck">
-        <LI>Access: <input type="checkbox" name="ckckeck"></LI>
-        <LI>Word: <input type="checkbox" name="ckckeck"></LI>
-        <LI>Excel: <input type="checkbox" name="ckckeck"></LI>
-        <LI>Powerpoint: <input type="checkbox" name="ckckeck"></LI>
-        <LI>Outlook: <input type="checkbox" name="ckckeck"></LI>
-        <LI>Project: <input type="checkbox" name="ckckeck"></LI>
-        <LI>Other: <input type="checkbox" name="ckckeck"> &nbsp; <input type="text" name="txtbox" placeholder="example"></LI> 
-      <label for="Network Connectivity">Network connectivity: </label>
-      <input type="checkbox" name="ckckeck">
-        <br>
-      <label for="Printing">Printing: </label>
-      <input type="checkbox" name="ckckeck">
-        <br>
-      <label for="Other">Other: </label>
-      <input type="checkbox" name="ckckeck">
-      <input id="name" name="name" placeholder="Example" />
+     
+	<label>Problem:</label>
+         <select name="Problem" onChange="changeProblem(this.options[selectedIndex].value);">
+         <option value="na">Problem</option>
+         <option value="Hardware">Hardware</option>
+         <option value="Software">Software</option>
+         <option value="Network Connectivity">Network Connectivity</option>
+         <option value="Phone">Phone</option>
+         <option value="Printing">Printing</option>
+	</fieldset>
+     <fieldset class="pure-group">
+	 <label>Problem:</label>
+	 <select name="Software Problem" onChange="changeProblem(this.options[selectedIndex].value);">
+         <option value="na">SoftWare Problem</option>
+         <option value="Access">Access</option>
+         <option value="Word">Word</option>
+         <option value="Excel">Excel</option>
+         <option value="Powerpoint">Powerpoint</option>
+         <option value="Outlook">Outlook</option>
+	 <option value="Project">Project</option>
+         <option value="W>W</option>
+         <option value="E">E</option>
+         <option value="p">P</option>
+         <option value="O">O</option>
+   
     </fieldset>
       
       
