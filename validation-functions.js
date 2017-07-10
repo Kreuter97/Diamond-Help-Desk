@@ -75,7 +75,7 @@ $(document).ready(function() {
 
         // Use Ajax to submit form data
         var url = 'https://script.google.com/macros/s/AKfycbwxkss3qJaxoLJ6LwmcibPicq1HgEFCWS8QBkPvCurXASNiV50/exec';
-        var redirectUrl = 'success-page.html';
+        var redirectUrl = 'kreuter97.github.io/Diamond-Help-Desk/Employee_Spreadsheet_success.html';
         // show the loading 
         $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
         var jqxhr = $.post(url, $form.serialize(), function(data) {
