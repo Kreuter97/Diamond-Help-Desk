@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="contact form example">
-  <title>Contact Form Example</title>
+    <meta name="description" content="Help Form">
+  <title>Help Form</title>
 </head>
 
 <body>
@@ -12,8 +12,8 @@
   <aside>
        <p>
           Help Form
-           
-    <button type="button"
+  	
+   	<button type="button"
 	style="background-color:Black;color:white;margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"
 	class="fa fa-home" 
 	onclick="window.location.href='http://kreuter97.github.io/Diamond-Help-Desk'">&nbsp Home</button>
@@ -21,46 +21,46 @@
 	<button type="button"
 	style="background-color:Black;color:white;margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"
 	class="fa fa-refresh"
-	onclick="window.location.href='http://kreuter97.github.io/Diamond-Help-Desk/Help.html'">&nbsp Reset</button>
+	onclick="window.location.href='http://kreuter97.github.io/Diamond-Help-Desk/Employees.html'">&nbsp Reset</button>
 	
        </p>
    </aside>
 
 <!-- START HERE -->
-   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
    <!-- Style The Contact Form How Ever You Prefer -->
    <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
 
   <form id="gform" method="POST" class="pure-form pure-form-stacked"
-  action="https://script.google.com/macros/s/AKfycbz6D7yZ7NAyjkKISCht2ksHlEkMI-BXAffAbM2aKFO1b5Jji_Y/exec">
+  action="https://script.google.com/macros/s/AKfycbzClLayz2eZTqLgqLonK7BbfTV8lks-XxjyW58OjbZvMndq_Cc/exec">
     <!-- change the form action to your script url -->
 	  
-  <p align="center">
+	<p align="center">
     	<button type="Submit"
 	style="background-color:Limegreen;color:white;margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"
 	class="fa fa-check">&nbsp Submit</button>
-  </p> 
-	  
-	  <br>
-	  <br>
+	  </p> 
+   
+    <br>
+    <br>
 
     <fieldset class="pure-group">
       <label for="name">Name: *</label>
       <input id="name" name="name" placeholder="First Last" />
     </fieldset>
       
-    <fieldset class="pure-group">
+      <fieldset class="pure-group">
       <label for="email"><em>Your</em> Email Address: *</label>
       <input id="email" name="email" type="email" value=""
       required placeholder="name@diamondpackaging.com"/>
       <span id="email-invalid" style="visibility:hidden">
         Must be a valid email address</span>
     </fieldset>
-      
+	  
     <fieldset class="pure-group">
-      <label for="Department">Department: *</label>
-      <input id="name" name="name" placeholder="Department" />
+      <label for="Building">Building: *</label>
+      <input id="Building" name="Building" placeholder="Building" />
     </fieldset>
 	  
 	<fieldset class="pure-group">
@@ -86,7 +86,6 @@
     </fieldset>
       
     <fieldset class="pure-group">
-     
 	<label>Problem: *</label>
          <select name="Problem" onChange="changeProblem(this.options[selectedIndex].value);">
          <option value="na">Problem</option>
@@ -100,7 +99,7 @@
 	</fieldset>
  
      <fieldset class="pure-group">
-	 <label>Software Problem:</label>
+	 <label>Software Problem: </label>
 	 <select name="Software Problem" onChange="changeSoftwareProblem(this.options[selectedIndex].value);">
          <option value="na">NA</option>
          <option value="Access">Access</option>
@@ -125,16 +124,12 @@
     </fieldset>
 
   </form>
- 
 
-    
   <!-- Customise the Thankyou Message People See when they submit the form: -->
   <div style="display:none;" id="thankyou_message">
     <h2><em>Thanks</em> for contacting us!
       We will get back to you soon!</h2>
   </div>
-   
-    
 
   <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" type="text/javascript"
